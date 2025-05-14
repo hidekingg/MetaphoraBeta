@@ -1,0 +1,99 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+}
+
+/* Estilos para el mapa */
+.map-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+}
+
+#map {
+    flex: 1;
+    height: 100dvh;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    z-index: 1;
+}
+
+
+.map-controls {
+    padding: 1rem;
+    background: white;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: cente;
+}
+
+.branch-count {
+    font-size: 0.9rem;
+    color: #666;
+    white-space: nowrap;
+}
+
+/* Popups del mapa */
+.leaflet-popup-content {
+    min-width: 220px;
+    margin: 1rem;
+}
+
+.leaflet-popup-content h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.leaflet-popup-content p {
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .main-content {
+        flex-direction: column;
+    }
+    
+    .branches-sidebar {
+        width: 100%;
+        border-left: none;
+        border-top: 1px solid #ddd;
+    }
+    
+    .map-container {
+        min-height: 50vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .map-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .search-box {
+        max-width: 100%;
+    }
+    
+    header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .branch-card {
+        padding: 1rem;
+    }
+}

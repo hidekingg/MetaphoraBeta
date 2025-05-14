@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* ELEMENTOS DEL CUERPO DE LA PAGINA: BODY, HEADER, FOOTER, MAIN */
+
+/* BODY */
+
+body{
+  background-color: rgb(255, 255, 255) !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  
+}
+
+/* ---------------------------------------- */
+
+/* HEADER */
+
+header{
+  background-color: #2b824b;
+  justify-content: center;
+}
+    /* NAVBAR */
+    .navbar a{
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 1px;
+      font-weight: 500;
+      font-size: large;
+    }
+
+    .dropdown-menu a{
+      color: black;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 1px;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+      margin-right: 1.5rem;
+    }
+
+    .navbar-nav .nav-item:last-child {
+      margin-right: 0;
+    }
+
+    .dropdown-item:focus, 
+    .dropdown-toggle:focus, 
+    .nav-link:focus {
+        outline: none !important;
+        box-shadow: none !important;
+        background-color: transparent !important;
+    }
+
+    /* LOGO */
+    .navbar-logo {
+        height: 40px;
+        width: auto;
+    }
+    
+    /* Para pantallas pequeñas */
+    @media (max-width: 768px) {
+        .navbar-logo {
+            height: 30px;
+        }
+    }
+
+    body {
+      padding-top: 70px; /* Ajusta este valor según la altura de tu navbar */
+    }
+    
+    /* Opcional: Fondo sólido para mejor legibilidad al hacer scroll */
+    .navbar.fixed-top {
+        background-color: #2b824b; /* Cambia al color de tu diseño */
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra sutil */
+    }
+
+    /* ------ */
+
+/* ---------------------------------------- */
+
+/* MAIN */
+
+main{
+  margin-top: 2%;
+  margin-bottom: 4%;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: #e8f0de;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+/* ---------------------------------------- */
+
+/* FOOTER */
+
+.Derechos{
+  font-size: small;
+  align-content: center;
+  justify-content: center;
+  background-color: #243524!important;
+  margin-top: 0;
+}
+
+footer {
+  background-color: #2b824b;
+  align-items: center;
+  text-align: center;
+  justify-items: center;
+  color: white;
+  padding: 0.5rem;
+  margin-top: auto;
+}
+
+footer a{
+  color: white;
+  margin-top: auto;
+}
+
+/* ---------------------------------------- */
+
+/* ----------------------------------------------------------------- */
+
+/* ELEMENTOS BOOTSTRAP */
+.carousel-inner{
+  border-radius: 16px;
+}
+
+
+.card{
+  /*width: 18rem;*/
+}
+
+/* ---------------------------------------- */
+
+/* ELEMENTOS DE TEXTO: PARRAFOS */
+
+.parrafos p{
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 1%;
+  margin-top: 2%;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.parrafos h5{
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: left;
+  font-style: normal;
+}
+
+.parrafos li{
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: left;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.parrafos h3 {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 2%;
+  color: #277a6c !important;
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+}
+
+/* ---------------------------------------- */
+
+/* ELEMENTOS DE TEXTO: TITULAR */
+
+.Titular h2 {
+  color: #2b824b;
+  font-weight: bold;
+  font-size: 1.8rem;
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.Titular p{
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+/* ---------------------------------------- */
+
+/* CONTENEDORES BOOTSTRAP O PROPIOS */
+
+.contenedor{
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  width: 100%;
+  background-color: #2b824b;
+  border-radius: 50px;
+}
+
+.container img{
+  border-radius: 16px;
+}
+
+.carousel{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ---------------------------------------- */
+
+/* PERFILES */
+
+.perfiles{
+  margin-right: 5%;
+}
+.perfiles2{
+  margin-left: 5%;
+}
+
+/* ---------------------------------------- */
+
+.table.custom-no-bg, 
+.table.custom-no-bg thead, 
+.table.custom-no-bg tbody, 
+.table.custom-no-bg tr, 
+.table.custom-no-bg th, 
+.table.custom-no-bg td {
+    background-color: transparent !important;
+}

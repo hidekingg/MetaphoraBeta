@@ -1,0 +1,49 @@
+.bus-seats {
+    background-color: #f8f9fa;
+    padding: 15px 30px; /* Más padding horizontal */
+    border-radius: 5px;
+    display: flex;
+    gap: 30px;
+    justify-content: flex-start; /* Cambiado de center a flex-start */
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scroll-padding: 30px; /* Asegura espacio al hacer scroll */
+}
+.seat-column {
+    display: inline-flex; /* Cambiado a inline-flex para el scroll horizontal */
+    flex-direction: column;
+    gap: 5px;
+    flex-shrink: 0; /* Evita que se reduzcan las columnas */
+}
+.seat {
+    width: 50px;
+    height: 40px;
+    margin: 0;
+    flex-shrink: 0; /* Evita que se reduzcan los botones */
+}
+
+.bus-seats::-webkit-scrollbar {
+    height: 8px;
+}
+.bus-seats::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+.bus-seats::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+.bus-seats::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.aisle {
+    height: 30px;
+    margin: 10px 0;
+    text-align: center;
+    color: #ccc;
+    font-size: large;
+    border-top: 3px dashed #ccc;
+    border-bottom: 3px dashed #ccc;
+}
